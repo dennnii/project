@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">🌤️ Сегодня</a>
+        <a href="week.html">📅 Неделя</a>
+        <a href="settings.html" class="active">⚙️ Настройки</a>
+    </nav>
+    
+    <main>
+        <div class="settings-card">
+            <h2>Выберите город</h2>
+            
+            <div class="city-buttons">
+                <button class="city-btn" onclick="setCity('Москва')">Москва</button>
+                <button class="city-btn" onclick="setCity('Санкт-Петербург')">Санкт-Петербург</button>
+                <button class="city-btn" onclick="setCity('Петрозаводск')">Петрозаводск</button>
+                <button class="city-btn" onclick="setCity('Нижний Новгород')">Нижний Новгород</button>
+                <button class="city-btn" onclick="setCity('Казань')">Казань</button>
+                <button class="city-btn" onclick="setCity('Екатеринбург')">Екатеринбург</button>
+            </div>
+            
+            <div id="settings-message" class="message"></div>
+        </div>
+    </main>
+
+    <script src="js/weather.js"></script>
+</body>
+</html>
